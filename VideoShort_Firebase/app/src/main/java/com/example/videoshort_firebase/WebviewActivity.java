@@ -38,6 +38,6 @@ public class WebviewActivity extends AppCompatActivity {
         binding.webview2.getSettings().setDatabaseEnabled(true);
         binding.webview2.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         binding.webview2.setWebChromeClient(new WebChromeClient());
-        binding.webview2.loadUrl("http://vnexpress.net");
+        binding.webview2.loadUrl("https://vnexpress.net");
     }
 }
