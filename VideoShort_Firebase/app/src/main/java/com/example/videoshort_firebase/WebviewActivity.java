@@ -29,7 +29,6 @@ public class WebviewActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        getSupportActionBar().hide();
         binding.webview2. getSettings().setLoadWithOverviewMode(true);
         binding.webview2.getSettings().setUseWideViewPort(true);
         binding.webview2.getSettings().setJavaScriptEnabled(true);
@@ -38,7 +37,7 @@ public class WebviewActivity extends AppCompatActivity {
         binding.webview2. getSettings().setDomStorageEnabled(true);
         binding.webview2.getSettings().setDatabaseEnabled(true);
         binding.webview2.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
-        binding.webview2. setWebChromeClient(new WebChromeClient());
-        binding.webview2.loadUrl("http://iotstar.vn");
+        binding.webview2.setWebChromeClient(new WebChromeClient());
+        binding.webview2.loadUrl("http://vnexpress.net");
     }
 }
