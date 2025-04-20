@@ -1,1 +1,5 @@
-/build
+# Ignore all JSON files in the build directory
+/build/*.json
+
+# Ignore the google-services.json file if it exists at any level
+/google-services.json

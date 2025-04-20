@@ -1,0 +1,3 @@
+com.example.videoshort_firebase.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

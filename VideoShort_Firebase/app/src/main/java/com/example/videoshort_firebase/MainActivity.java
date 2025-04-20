@@ -1,8 +1,10 @@
 package com.example.videoshort_firebase;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +13,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
     VideoAdapter videoAdapter;
     List<VideoModel> list;
     VideosFireBaseAdapter videosAdapter;
+    ImageView currentAvatar;
+
+    DatabaseReference mDataBase;
+    FirebaseAuth auth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,17 +51,59 @@ public class MainActivity extends AppCompatActivity {
         });
         viewPager2 = findViewById(R.id.vpager);
         list = new ArrayList<>();
-        //getVideos1();
-        getVideos2();
+        auth = FirebaseAuth.getInstance();
+        mDataBase = FirebaseDatabase.getInstance().getReference("users");
+        videoAdapter = new VideoAdapter(this, list);
+        viewPager2.setAdapter(videoAdapter);
+        currentAvatar = findViewById(R.id.imAvatar);
+        getAllVideo();
+        getCurrentUserAvatar();
+        currentAvatar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        });
+        //getVideos2();
     }
-    private void getVideos1(){
-        DatabaseReference mDataBase = FirebaseDatabase.getInstance().getReference("videos");
-        FirebaseRecyclerOptions<Video1Model> options = new FirebaseRecyclerOptions. Builder<Video1Model>()
-                .setQuery(mDataBase, Video1Model.class).build();
-        videosAdapter = new VideosFireBaseAdapter(options);
-        viewPager2.setOrientation(ViewPager2.ORIENTATION_VERTICAL);
-        viewPager2.setAdapter(videosAdapter);
+
+    private void getAllVideo(){
+        mDataBase.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                list.clear();
+                for (DataSnapshot userSnap : snapshot.getChildren()) {
+                    String email = userSnap.child("email").getValue(String.class);
+                    String avatar = userSnap.child("avatar").getValue(String.class);
+                    for (DataSnapshot videoSnap : userSnap.child("videos").getChildren()) {
+                        VideoModel video = videoSnap.getValue(VideoModel.class);
+                        video.setEmail(email);
+                        video.setAvatar(avatar);
+                        list.add(video);
+                    }
+                }
+                videoAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {}
+        });
     }
+
+    private void getCurrentUserAvatar() {
+        String uid = auth.getCurrentUser().getUid();
+        mDataBase.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                String avatar = snapshot.child("avatar").getValue(String.class);
+                if(avatar != null && !avatar.isEmpty())
+                    Glide.with(MainActivity.this).load(avatar).into(currentAvatar);
+                videoAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {}
+        });
+    }
+    /*
     private void getVideos2(){
         APIService.servieapi.getVideos().enqueue(new Callback<>() {
             @Override
@@ -67,22 +120,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    /*
-    @Override
-    protected void onStart() {
-        super.onStart();
-        videosAdapter.startListening();
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        videosAdapter.stopListening();
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        videosAdapter.notifyDataSetChanged();
-    }
-
      */
 }

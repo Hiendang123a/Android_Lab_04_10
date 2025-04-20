@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://videoshort-1f96c-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">662110335474</string>
+    <string name="google_api_key" translatable="false">AIzaSyDJ3ETluiTMrLvZPPW8WWHHIArZAExajJA</string>
+    <string name="google_app_id" translatable="false">1:662110335474:android:7807485f522f10a4ecbb6b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDJ3ETluiTMrLvZPPW8WWHHIArZAExajJA</string>
+    <string name="google_storage_bucket" translatable="false">videoshort-1f96c.firebasestorage.app</string>
+    <string name="project_id" translatable="false">videoshort-1f96c</string>
+</resources>
