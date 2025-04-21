@@ -4,6 +4,7 @@ package com.example.videoshort_firebase.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -36,16 +37,20 @@ public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
   public final RecyclerView recyclerView;
 
+  @NonNull
+  public final Button upload;
+
   private ActivityProfileBinding(@NonNull RelativeLayout rootView,
       @NonNull ImageView avatarImageView, @NonNull ImageView backButton,
       @NonNull TextView emailTextView, @NonNull RelativeLayout main,
-      @NonNull RecyclerView recyclerView) {
+      @NonNull RecyclerView recyclerView, @NonNull Button upload) {
     this.rootView = rootView;
     this.avatarImageView = avatarImageView;
     this.backButton = backButton;
     this.emailTextView = emailTextView;
     this.main = main;
     this.recyclerView = recyclerView;
+    this.upload = upload;
   }
 
   @Override
@@ -101,8 +106,14 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.upload;
+      Button upload = ViewBindings.findChildViewById(rootView, id);
+      if (upload == null) {
+        break missingId;
+      }
+
       return new ActivityProfileBinding((RelativeLayout) rootView, avatarImageView, backButton,
-          emailTextView, main, recyclerView);
+          emailTextView, main, recyclerView, upload);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

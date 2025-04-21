@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.videoshort_firebase.app-mergeDebugResources-46:/values-v24/values-v24.xml",
+            "outputFile": "com.example.videoshort_firebase.app-mergeDebugResources-51:/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.9\\transforms\\3d074d89f6ad50f1b58aa37d9dd06d57\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.9\\transforms\\e17b426c3c09573aa67bb8712179613e\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.9\\transforms\\0f1a2bdff2f3c3fcf3ed27b93a26948f\\transformed\\media-1.6.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

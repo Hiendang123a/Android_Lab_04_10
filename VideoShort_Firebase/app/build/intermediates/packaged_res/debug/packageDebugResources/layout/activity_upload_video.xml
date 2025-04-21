@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:id="@+id/main"
+    tools:context=".UploadVideo"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tvTitleHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tải lên Video"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <!-- Tiêu đề Video -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Tiêu đề video">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Mô tả Video -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Mô tả video">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Khung hiển thị video -->
+        <VideoView
+            android:id="@+id/videoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Nút Tải lên -->
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tải lên"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white" />
+
+        <!-- Nút Lưu -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

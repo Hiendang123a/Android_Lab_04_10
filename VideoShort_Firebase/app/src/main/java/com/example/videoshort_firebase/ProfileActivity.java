@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,7 +37,7 @@ public class ProfileActivity extends AppCompatActivity {
     RecyclerView videosRecyclerView;
     VideoAdapter videoAdapter;
     ArrayList<VideoModel> videos = new ArrayList<>();
-
+    Button upload;
     DatabaseReference userRef;
     FirebaseAuth auth;
     String avatarimg;
@@ -54,7 +55,7 @@ public class ProfileActivity extends AppCompatActivity {
         avatarImageView = findViewById(R.id.avatarImageView);
         videosRecyclerView = findViewById(R.id.recyclerView);
         backButton = findViewById(R.id.backButton); // Lấy nút quay lại
-
+        upload = findViewById(R.id.upload);
         auth = FirebaseAuth.getInstance();
         userRef = FirebaseDatabase
                 .getInstance("https://videoshort-1f96c-default-rtdb.firebaseio.com/")
@@ -73,6 +74,10 @@ public class ProfileActivity extends AppCompatActivity {
             config.put("api_secret", "qQtAhNIR4Z1WYQ4nzp0HIFlN1Bc");
             MediaManager.init(this, config);
             openImageChooser();
+        });
+
+        upload.setOnClickListener(v->{
+            startActivity(new Intent(ProfileActivity.this, UploadVideo.class));
         });
     }
 

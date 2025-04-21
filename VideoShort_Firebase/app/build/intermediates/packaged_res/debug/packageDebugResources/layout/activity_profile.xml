@@ -19,6 +19,7 @@
         android:contentDescription="Back Button"
         android:clickable="true"
         android:focusable="true"/>
+
     <ImageView
         android:id="@+id/avatarImageView"
         android:layout_width="100dp"
@@ -27,6 +28,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/avatarImageView"
+        android:text="Upload Video"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/emailTextView"

@@ -3,24 +3,24 @@
 3    package="com.example.videoshort_firebase.test" >
 4
 5    <uses-sdk
-5-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:5:5-74
+5-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:5:5-74
 6        android:minSdkVersion="24"
-6-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:5:15-41
+6-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:5:15-41
 7        android:targetSdkVersion="34" />
-7-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:5:42-71
+7-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:11:5-15:81
+9-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:11:5-15:81
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:11:22-76
+10-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:11:22-76
 11        android:functionalTest="false"
-11-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:14:22-52
+11-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:13:22-53
+12-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:13:22-53
 13        android:label="Tests for com.example.videoshort_firebase"
-13-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:15:22-79
+13-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:15:22-79
 14        android:targetPackage="com.example.videoshort_firebase" />
-14-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:12:22-77
+14-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:12:22-77
 15
 16    <queries>
 16-->[androidx.test:runner:1.6.1] C:\Users\ASUS\.gradle\caches\8.9\transforms\78b4ccf67990a178f7bbd3f054741d04\transformed\runner-1.6.1\AndroidManifest.xml:24:5-28:15
@@ -40,12 +40,12 @@
 22-->[androidx.test:core:1.6.1] C:\Users\ASUS\.gradle\caches\8.9\transforms\3af7cd27f8039f845c136e818f62f2d3\transformed\core-1.6.1\AndroidManifest.xml:24:22-69
 23
 24    <application
-24-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:7:5-9:19
+24-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:7:5-9:19
 25        android:debuggable="true"
 26        android:extractNativeLibs="false" >
 27        <uses-library android:name="android.test.runner" />
-27-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:8:9-60
-27-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5244640863944072602.xml:8:23-57
+27-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:8:9-60
+27-->C:\hoctap\Study\Android Programing\Lab\BT_04_10\VideoShort_Firebase\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14287181031563123627.xml:8:23-57
 28
 29        <activity
 29-->[androidx.test:core:1.6.1] C:\Users\ASUS\.gradle\caches\8.9\transforms\3af7cd27f8039f845c136e818f62f2d3\transformed\core-1.6.1\AndroidManifest.xml:27:9-34:20

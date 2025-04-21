@@ -16,11 +16,16 @@ id avatarImageView
 id backButton
 id btnLogin
 id btnRegister
+id btnSave
 id btnSignup
+id btnUpload
+id descInputLayout
 id disfavcounts
 id disfavorites
 id email
 id emailTextView
+id etDescription
+id etTitle
 id favcounts
 id favorites
 id imAvatar
@@ -33,7 +38,11 @@ id password
 id recyclerView
 id textVideoDescription
 id textVideoTitle
+id titleInputLayout
 id tvEmail
+id tvTitleHeader
+id upload
+id videoPreview
 id videoProgressBar
 id videoView
 id vpager
@@ -42,6 +51,7 @@ layout activity_login
 layout activity_main
 layout activity_profile
 layout activity_signup
+layout activity_upload_video
 layout activity_webview
 layout single_video_row
 mipmap ic_launcher

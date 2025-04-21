@@ -1,30 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-47:\\layout\\activity_profile.xml",
-        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-50:\\layout\\activity_profile.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-52:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-55:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.videoshort_firebase.app-mergeDebugResources-47:/layout/activity_profile.xml",
-        "source": "com.example.videoshort_firebase.app-main-50:/layout/activity_profile.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-52:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-55:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-47:\\layout\\activity_webview.xml",
-        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-50:\\layout\\activity_webview.xml"
+        "merged": "com.example.videoshort_firebase.app-mergeDebugResources-52:/layout/activity_upload_video.xml",
+        "source": "com.example.videoshort_firebase.app-main-55:/layout/activity_upload_video.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-47:\\layout\\single_video_row.xml",
-        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-50:\\layout\\single_video_row.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-52:\\layout\\activity_upload_video.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-55:\\layout\\activity_upload_video.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-47:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-50:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-52:\\layout\\activity_webview.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-55:\\layout\\activity_webview.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-47:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-50:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-52:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-55:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-47:\\layout\\activity_signup.xml",
-        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-50:\\layout\\activity_signup.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-52:\\layout\\single_video_row.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-55:\\layout\\single_video_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-mergeDebugResources-52:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\8.9\\com.example.videoshort_firebase.app-main-55:\\layout\\activity_signup.xml"
     }
 ]
